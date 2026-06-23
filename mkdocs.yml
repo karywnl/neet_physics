@@ -1,0 +1,94 @@
+site_name: NEET Physics
+site_description: A beginner-first, visual, deeply connected guide to NEET physics.
+site_author: kary
+site_url: https://karywnl.github.io/neet_physics/
+copyright: Based on NCERT Class 11 Physics &middot; last reviewed June 2026
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - path: javascripts/a11y.js
+    defer: true
+
+nav:
+  - Home: index.md
+  - Foundations:
+      - Units and measurement: foundations/units-and-measurement.md
+  - Kinematics:
+      - Motion in a straight line: kinematics/motion-straight-line.md
+      - Motion in a plane: kinematics/motion-in-a-plane.md
+  - Dynamics:
+      - Laws of motion: dynamics/laws-of-motion.md
+      - Work, energy and power: dynamics/work-energy-power.md
+  - Rotational motion:
+      - Particles and rotational motion: rotation/rotational-motion.md
+  - Gravitation:
+      - Gravitation: gravitation/gravitation.md

@@ -1,0 +1,13 @@
+[project]
+name = "neet-physics"
+version = "0.1.0"
+description = "A beginner-first, visual, deeply connected guide to NEET physics."
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.7.6",
+]
+
+[dependency-groups]
+dev = [
+    "pypdf>=4.0",
+]
